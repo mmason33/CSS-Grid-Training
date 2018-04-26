@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CSS GRID</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+        <style>
+            .title {
+                font-size: 60px;
+                text-align: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-bottom: 40px;
+            }
+            .select {
+                text-align: center;
+                margin-bottom: 40px;
+            }
+            .grid-change {
+                width: 250px;
+            }
+            .description {
+                position: relative;
+                height: 300px;
+                font-family:monospace;
+                font-size: 30px;
+                text-align: center;
+                color: whitesmoke;
+                background-color: black;
+                line-height: 120px;
+            }
+            .wrapper {
+                position: relative;
+                height: 400px;
+                background-color: black;
+                padding-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="title">
+            CSS GRID
+        </div>
+        <div class="select">
+            <select class="grid-change">
+                <option value="grid" selected="true">Grid</option>
+                <option value="percents">Percentage Values</option>
+                <option value="pixels">Pixel Values</option>
+                <option value="mixed">Mixed Values</option>
+                <option value="fraction">Fraction Units</option>
+                <option value="shorthand">Shorthand Grid</option>
+                <option value="justifyStart">Justify Start</option>
+                <option value="justifyEnd">Justify End</option>
+                <option value="justifyCenter">Justify Center</option>
+                <option value="justifyStretch">Justify Stretch</option>
+                <option value="alignStart">Align Start</option>
+                <option value="alignEnd">Align End</option>
+                <option value="alignCenter">Align Center</option>
+                <option value="alignStretch">Align Stretch</option>
+                <option value="justifyContentStart">Justify Content Start</option>
+                <option value="justifyContentEnd">Justify Content End</option>
+                <option value="justifyContentCenter">Justify Content Center</option>
+                <option value="justifyContentStretch">Justify Content Stretch</option>
+            </select>
+        </div>
+        <style class="style"></style>
+        <div class="wrapper">
+            <div class="container">
+                <div class="row one">
+                    1
+                </div>
+                <div class="row two">
+                    2
+                </div>
+                <div class="row three">
+                    3
+                </div>
+                <div class="row four">
+                    4
+                </div>
+                <div class="row five">
+                    5
+                </div>
+                <div class="row six">
+                    6
+                </div>
+            </div>
+        </div>
+        <div class="description"></div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>

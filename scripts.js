@@ -71,7 +71,7 @@
     };
 
     $('.grid-change').change(function() {
-        $('.style').html(values[$('.grid-change').val()]);
-        $('.description').text(values[$('.grid-change').val()]);
+        $('.style').html(values[$('.grid-change').val()].css);
+        $('.description').text(values[$('.grid-change').val()].css);
     });
 })(jQuery)
